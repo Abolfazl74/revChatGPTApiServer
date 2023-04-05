@@ -1,4 +1,4 @@
-# revChatGPTServer Fast API for chatGPT
+# API Server Fast API for revChatGPT
 
 Use
 [localhost:port/docs](localhost:8000/docs)
