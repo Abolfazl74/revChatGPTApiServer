@@ -1,4 +1,4 @@
-# revChatGPTServer Fast API for chatGPT
+# API Server Fast API for revChatGPT
 
 Use
 [localhost:port/docs](localhost:8000/docs)
@@ -28,11 +28,11 @@ This will return some return a JSON that looks like this
   }
 }
 ```
-This project has been designed to handle all of available parameters in original [revChatGPT](https://github.com/acheong08/ChatGPT) as an api and the models are designed to catch them all. In this version the only functional parameter is `prompt` but you can easily add rest of them by changing the input structure in 
+This project has been designed to handle all of available parameters in original [revChatGPT](https://github.com/acheong08/ChatGPT) as an api and the models are designed to catch them all. In this version the only functional parameter is `prompt` but you can easily add the rest of them by changing the input structure in 
 ``` 
 api_prompt = body.prompt 
 ``` 
-Also all of the real OpenAi API parameters for completion section has been captured so you can edit and enhance the prompt according to the input parameters for better responses.
+Also all of the real OpenAi API parameters for completion section have been captured so you can edit and enhance the prompt according to the input parameters for better responses.
 
 # Setup
 
@@ -45,7 +45,7 @@ Enter your config file with your username, password and access token
   "access_token": "<example>"
 }
 ```
-You can limit certain domains' number of requests per day so you need to enter your domains in user_status.json
+You can limit the number of the requests of the certain domains per day so you need to enter your domains in user_status.json
 
 ```
 {
@@ -53,7 +53,7 @@ You can limit certain domains' number of requests per day so you need to enter y
   "google.com": 4
 }
 ```
-** Note **: This method is using REFERER header which is not a reliable parameter for identifying user but it has a good certainty on user limit rate. If you are providing a paid subscription for your users you need to use a valid method to identify them (like api keys) so their credit can not be abused easily.
+** Note **: This method is using REFERER header which is not a reliable parameter for identifying the user but it has a good certainty on user limit rate. If you are providing a paid subscription for your users you need to use a valid method to identify them (like api keys) so their credit cannot be abused easily.
 
 ```
 virtualenv env
