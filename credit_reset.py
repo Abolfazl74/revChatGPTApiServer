@@ -1,5 +1,5 @@
+#!/usr/bin/python
 import json
-
 
 
 with open("users_status.json", "r+") as g:
