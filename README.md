@@ -74,6 +74,6 @@ nohup python main.py &
 crontab -e
 00 00 * * * python /path-to-script/credit_reset.py
 ```
-# Credits
+# Initial Fork:
 
 https://github.com/chitalian/revChatGPTServer
